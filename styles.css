@@ -1,56 +1,90 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f8fc; /* Warna latar belakang yang lembut */    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .container {
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Shadow lembut */
+    width: 300px;
 }
 
 h1 {
     text-align: center;
-}
-
-.form-group {
-    margin-bottom: 15px;
+    color: #4b6584; /* Warna teks biru keabu-abuan */
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
 label {
     display: block;
-    font-weight: bold;
+    margin-top: 10px;
+    color: #4b6584; /* Warna teks lembut */
+    font-size: 14px;
+    font-weight: 500;
 }
 
 input {
-    width: 100%;
+    width: 93%;
     padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+    margin: 8px 0 15px;
+    border: 1px solid #d1d8e0; /* Warna border yang lembut */
+    border-radius: 6px; /* Border lebih bulat */
+    background-color: #f7f9fc; /* Latar input */
+    font-size: 14px;
+    color: #34495e; /* Warna teks gelap */
+}
+
+input:focus {
+    outline: none;
+    border-color: #82ccdd; /* Border biru lembut saat fokus */
+    box-shadow: 0 0 5px rgba(130, 204, 221, 0.5); /* Efek fokus */
 }
 
 button {
     width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
+    padding: 12px;
+    background-color: #82ccdd; /* Warna biru lembut */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px; /* Tombol lebih bulat */
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease; /* Efek hover halus */
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #60a3bc; /* Warna hover */
 }
 
-.otp-message {
+#message {
+    margin-top: 20px;
     text-align: center;
-    font-size: 16px;
-    color: #d9534f;
+    font-size: 14px;
+    font-weight: bold;
+    color: red; /* Tetap merah untuk pesan error */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+    }
 }
