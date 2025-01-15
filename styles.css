@@ -73,6 +73,30 @@ button:hover {
     color: red; /* Tetap merah untuk pesan error */
 }
 
+.tahap-container {
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Shadow lembut */
+}
+
+.steps-container {
+    max-width: 250px;
+}
+.steps-container h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.steps-container ul {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+.steps-container li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
 /* Responsif untuk layar kecil */
 @media (max-width: 480px) {
     .container {
